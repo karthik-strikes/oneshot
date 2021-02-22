@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COLLEGE--FORM</title>
+</head>
+<body style="background-color:rgb(220, 238, 240)" text align="center"><strong>Student Form
+</strong><br><br>
+<form text align="left">
+<table border="3" cellpadding="10" cellspacing="0" style="background-color:rgb(204, 255, 102)"
+align="center">
+<tr> <td style="width: 50%">
+<label for="First_Name"><b>Student Name *</b></label><br />
+<input name="First_Name" type="text" required maxlength="50" style="width: 260px" />
+</td>
+<td style="width: 50%">
+<label for="Last_Name"><b>Student ID *</b></label><br />
+<input name="Last_Name" type="text" required maxlength="50" style="width: 260px" />
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+<label for="Phone"><b>Batch*</b></label>
+<br>
+<input name="Phone" type="number" required id="pno" style="width: 260px" />
+</td>
+<td style="width: 50%">
+<label for="dob"><b>Date Joined</b></label>
+<input name="dob" type="date" id="dob" required style="width:260px">
+</td>
+</tr>
+<tr>
+<td colspan="1">Skills</td>
+<td><select name="City">
+<option value="-1" selected>select..</option>
+<option value="New Delhi">React_JS</option>
+<option value="Mumbai">C</option>
+<option value="Goa">C++</option>
+<option value="Patna">Java</option>
+</select></td>
+</tr>
+
+<tr>
+<td colspan="1">Course</td>
+<td><select name="Course">
+<option value="-1" selected>select..</option>
+<option value="B.Tech">B.TECH</option>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="BCA">BCA</option>
+</select></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;">
+<input name="skip_submit" type="submit" required value="Submit Form"
+onClick="validateForm()"/>
+</td>
+</tr>
+</table>
+</form>
+<script>
+function validateForm()
+{
+ alert("HI"); var email = document.getElementById("email").value;
+ var pno = document.getElementById("pno").value;
+ var fax = document.getElementById("fax").value;
+ var pas = document.getElementById("pas").value;
+ var cnf = document.getElementById("cnfpas").value;
+ var arr= [];
+ var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[az]{2,4}$/;
+ if (pattern.test(email)) {
+ arr.push(1);
+ }
+ else {
+ arr.push(0);
+ alert("INVALID EMAIL ADDRESS");
+ }
+ if(pno.length==10 && pno.match(/^[0-9]+$/))
+ arr.push(1);
+ else {
+ arr.push(0);
+ alert("Invalid phone Number");
+ }
+ if(pas===cnf)
+ arr.push(1);
+ else {
+ arr.push(0);
+ alert("PASSWORD AND CONFORM PASSWORD MUST BE SAME");
+ }
+ var today = new Date();
+ var birthDate = new Date(document.getElementById("dob").value);
+ // alert(birthdate);alert("today");
+ var age = today.getFullYear() - birthDate.getFullYear();
+ var m = today.getMonth() - birthDate.getMonth();
+ if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
+ {
+ age--;
+ }
+ alert(age);
+ if(age<18)
+ {
+ arr.push(0);
+ alert("INVALID AGE");
+ }
+ else {
+ arr.push(1);
+ }
+ if(!arr.includes(0))
+ alert("FORM SUBMITTED SUCCESSFULLY ");
+}
+</script>
+</body>
+</html>

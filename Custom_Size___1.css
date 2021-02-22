@@ -1,0 +1,164 @@
+.mediaViewInfo {
+	--web-view-name: Custom Size – 1;
+	--web-view-id: Custom_Size__1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-refresh-for-changes: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Custom_Size__1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Custom_Size__1 {
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	background-color: rgba(0,97,131,1);
+	overflow: hidden;
+	--web-view-name: Custom Size – 1;
+	--web-view-id: Custom_Size__1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-refresh-for-changes: true;
+	--web-enable-deep-linking: true;
+}
+#Rectangle_6 {
+	fill: rgba(253,201,100,1);
+}
+.Rectangle_6 {
+	width: 159px;
+	height: 1287px;
+	position: absolute;
+	overflow: visible;
+	transform: matrix(1,0,0,1,265.4957,-348.9957) rotate(45deg);
+	transform-origin: center;
+}
+#ID479e9f25c6fafffbf1b8863deeb0 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 346.788px;
+	height: 324.978px;
+	left: 53px;
+	top: 138px;
+	overflow: visible;
+}
+#Rectangle_2 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 365px;
+	height: 342.978px;
+	left: 399.788px;
+	top: 138px;
+}
+#Group_3 {
+	position: absolute;
+	width: 124.555px;
+	height: 17.012px;
+	left: 461.73px;
+	top: 339.53px;
+	overflow: visible;
+}
+#I_agree_to_the_terms_of_servic {
+	left: 23.555px;
+	top: 4.362px;
+	position: absolute;
+	overflow: visible;
+	width: 102px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 7px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_4 {
+	fill: rgba(239,244,247,1);
+}
+.Rectangle_4 {
+	position: absolute;
+	overflow: visible;
+	width: 17.012px;
+	height: 17.012px;
+	left: 0px;
+	top: 0px;
+}
+#Path_1 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 8.469px;
+	height: 6.732px;
+	left: 4.979px;
+	top: 6.338px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_5 {
+	fill: rgba(255,100,124,1);
+}
+.Rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 135.884px;
+	height: 30.535px;
+	left: 461.73px;
+	top: 288.929px;
+}
+#SIGN_UP_FOR__STUDENT {
+	left: 477.008px;
+	top: 300px;
+	position: absolute;
+	overflow: visible;
+	width: 95px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(255,255,255,1);
+}
+#Path_2 {
+	fill: rgba(255,100,124,1);
+}
+.Path_2 {
+	overflow: visible;
+	position: absolute;
+	width: 135.884px;
+	height: 30.535px;
+	left: 461.73px;
+	top: 226.551px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#SIGN_UP_FOR__COLLEGE {
+	left: 477.008px;
+	top: 235.467px;
+	position: absolute;
+	overflow: visible;
+	width: 96px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(255,255,255,1);
+}
